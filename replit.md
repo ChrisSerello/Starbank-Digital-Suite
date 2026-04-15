@@ -16,10 +16,18 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - **API codegen**: Orval (from OpenAPI spec)
 - **Build**: esbuild (CJS bundle)
 
+## Artifacts
+
+- **Grupo Starbank** (`artifacts/starbank`): React + TypeScript + Vite institutional website for Grupo Starbank / Starbank. Uses Tailwind CSS, Framer Motion, React Router, Lucide icons, typed content data, dark/light theme support, semantic sections, and Portuguese-BR institutional copy.
+- **API Server** (`artifacts/api-server`): Shared Express API server.
+- **Canvas** (`artifacts/mockup-sandbox`): Design preview sandbox.
+
 ## Key Commands
 
 - `pnpm run typecheck` — full typecheck across all packages
 - `pnpm run build` — typecheck + build all packages
+- `pnpm --filter @workspace/starbank run dev` — run the Starbank web app locally
+- `pnpm --filter @workspace/starbank run build` — build the Starbank web app
 - `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from OpenAPI spec
 - `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
 - `pnpm --filter @workspace/api-server run dev` — run API server locally
