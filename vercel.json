@@ -1,6 +1,6 @@
 {
   "buildCommand": "pnpm --filter @workspace/starbank run build",
-  "outputDirectory": "artifacts/starbank/dist/public",
+  "outputDirectory": "artifacts/starbank/dist",
   "installCommand": "pnpm install",
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/index" }
