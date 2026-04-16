@@ -21,9 +21,12 @@ export default function CTA() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="h-14 px-8 text-base">
-              Falar com um Executivo
-              <ArrowRight className="ml-2 h-5 w-5" />
+            <Button size="lg" variant="secondary" className="h-14 px-8 text-base" asChild>
+              <a 
+                href="https://wa.me/5511939329765" target="blank" rel="noopener noreferrer">
+                Falar com um Executivo
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
             </Button>
             <Button size="lg" variant="outline" className="h-14 px-8 text-base bg-transparent border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground">
               Solicitar Proposta Comercial

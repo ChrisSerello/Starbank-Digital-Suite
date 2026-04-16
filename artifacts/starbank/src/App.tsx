@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/theme-provider";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
+import Historia from "@/pages/Historia";
 
 const queryClient = new QueryClient();
 
@@ -13,6 +14,7 @@ function Router() {
     <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/historia" element={<Historia />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

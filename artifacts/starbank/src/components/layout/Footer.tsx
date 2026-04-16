@@ -7,13 +7,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 rounded-md bg-primary flex items-center justify-center text-primary-foreground font-bold text-xl leading-none">
-                S
-              </div>
               <span className="font-bold text-xl tracking-tight">Grupo Starbank</span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              Ecossistema financeiro enterprise-grade. Integrando infraestrutura bancária, crédito digital e soluções corporativas com máxima segurança e conformidade.
+              Ecossistema financeiro enterprise-grade. Integrando infraestrutura bancária, crédito digital e soluções corporativas com máxima segurança e conformidade. <hr />
+              <strong>CNPJ:</strong> 26.252.669/0001-64 
             </p>
           </div>
           
@@ -42,11 +40,12 @@ export function Footer() {
           <div id="contato">
             <h4 className="font-semibold mb-4">Contato</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
-              <li>contato@grupostarbank.com.br</li>
-              <li>Telefone comercial: informar número oficial</li>
+              <li>contato@starcard.tec.br</li>
+              <li>Telefone: (11) 5116-4477 ou (11) 94066-9414</li>
               <li className="pt-2">
                 <span className="block text-foreground font-medium mb-1">Endereço</span>
-                Informar endereço corporativo oficial
+                Avenida Cauaxi 293, 34°, Sala 3402 - São Paulo.
+                CEP: 06454-020
               </li>
             </ul>
           </div>
